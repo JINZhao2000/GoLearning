@@ -21,3 +21,29 @@
 - 支持返回多个值
 - 切片 slice，延迟执行 defer
 
+## 3. Go 的数据类型
+
+__基本数据类型__ 
+
+- 数值型
+    - 整数：int，int8，int16，int32(rune 表示一个 Unicode 的码点)，int64，uint，uint8，uint16，uint32，uint64，byte(uint8)
+    - 浮点：float32，float64
+    - 复数：complex32，complex64
+- 字符型（没有专门的字符类型，通过 byte 保存单个字母）
+- 布尔型：bool
+- 字符串：string（官方归类到基本类型）
+
+__派生类型__ 
+
+- 指针 Pointer
+- 数组
+- 结构体 struct
+- 管道 Channel
+- 函数
+- 切片 slice
+- 接口 interface
+- map
+- ......
+
+
+
