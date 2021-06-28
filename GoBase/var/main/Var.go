@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"unsafe"
 )
 
@@ -42,4 +43,16 @@ func main()  {
 	"unsafe"
 )`
 	fmt.Println(str2)
+
+	var str3 = fmt.Sprintf("%c%c%c",char2, char3, char4)
+	fmt.Println(str3)
+	str3 = fmt.Sprintf("%t",c)
+	fmt.Println(str3)
+	fmt.Printf("%q",str3)
+	str3 = strconv.FormatInt(20,10);
+	fmt.Println(str3)
+	str3 = strconv.FormatFloat(1.2345678,'f',3,64)
+	fmt.Println(str3)
+	str3 = strconv.FormatBool(true)
+	fmt.Println(str3)
 }
